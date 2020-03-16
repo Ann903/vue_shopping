@@ -1,16 +1,25 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Router from 'vue-router'
 import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
+import Welcome from '../components/Welcome.vue'
+import Users from '../components/user/Users.vue'
 
-Vue.use(VueRouter)
+Vue.use(Router)
 
-const router = new VueRouter({
+const router = new Router({
   routes: [
     // 自動重定向，跳轉到登錄頁面
     { path: '/', redirect: '/login' },
     { path: '/login', component: Login },
-    { path: '/home', component: Home }
+    {
+      path: '/home',
+      component: Home,
+      redirect: '/welcome',
+      children: [{ path: '/Welcome', component: Welcome },
+        { path: '/users', component: Users }
+      ]
+    }
   ]
 })
 

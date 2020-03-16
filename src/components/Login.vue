@@ -9,11 +9,11 @@
             <el-form ref="loginFormRef" label-width="0px" :model="loginForm" :rules="loginFormRules" class="login_form">
                 <!-- 用户名 -->
                 <el-form-item prop="username">   <!--prop 验证规则生效-->
-                    <el-input v-model="loginForm.username" prefix-icon="el-icon-user-solid"></el-input>
+                    <el-input v-model="loginForm.username" prefix-icon="iconfont icon-user"></el-input>
                 </el-form-item>
                 <!-- 密码 -->
                 <el-form-item prop="password">
-                    <el-input v-model="loginForm.password" prefix-icon="el-icon-lock" type="password"></el-input>
+                    <el-input v-model="loginForm.password" prefix-icon="iconfont icon-3702mima" type="password"></el-input>
                 </el-form-item>
                 <!-- 按钮区域 -->
                 <el-form-item class="btns">
