@@ -3,7 +3,7 @@
         <div class="login_box">
             <!-- 头像区域 -->
             <div class="avater_box">
-                <img src="../assets/logo.png" alt="">
+                <img src="../assets/LC.png" alt="">
             </div>
             <!-- 登录表单区域 -->  <!--重置表单就为这个表单添加一个ref引用，值就是组件的实例对象-->                                           <!--:rules绑定校验规则-->
             <el-form ref="loginFormRef" label-width="0px" :model="loginForm" :rules="loginFormRules" class="login_form">

@@ -28,7 +28,8 @@ import {
   Tag,
   Tree,
   Select,
-  Option
+  Option,
+  Cascader
 } from 'element-ui'
 
 // 导入弹框提示组件,需要进行全局挂载
@@ -61,6 +62,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 
 // 把弹框组件挂载到Vue的原型对象上，每一个组件都可以通过this访问到$message
 Vue.prototype.$message = Message
