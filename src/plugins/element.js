@@ -32,7 +32,12 @@ import {
   Cascader,
   Alert,
   Tabs,
-  TabPane
+  TabPane,
+  Steps,
+  Step,
+  CheckboxGroup,
+  Checkbox,
+  Upload
 } from 'element-ui'
 
 // 导入弹框提示组件,需要进行全局挂载
@@ -69,6 +74,11 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(Upload)
 
 // 把弹框组件挂载到Vue的原型对象上，每一个组件都可以通过this访问到$message
 Vue.prototype.$message = Message
